@@ -3,11 +3,6 @@ import Navbar from "./Navbar"
 import pdf from './Priyanshi.pdf'
 import Pic from "./gslogo.png";
 
-
-
-
-
-
 const Resume = () =>{
     
     return(

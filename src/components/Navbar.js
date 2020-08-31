@@ -8,16 +8,19 @@ import{
 } from '@material-ui/core'
 
 import {
-    ArrowBack,
     AssignmentInd,
     Home,ContactMail
 } from '@material-ui/icons'
+import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles({
     menuSlider: {
         width:250,
-        background: 'linear-gradient(to right bottom, #FE6B8B, #FF8E53)',
+        background: 'linear-gradient(to right bottom, #ED4264, #FFEDBC)',
         height: "100%"
+    },
+    text:{
+        color:"white" 
     }
     
 })
@@ -58,10 +61,10 @@ const Navbar = () => {
                <List>
                     {menuItems.map((lsitem,key) =>(
                         <ListItem button key={key} component={Link} to={lsitem.listpath}>
-                            <ListItemIcon>
+                            <ListItemIcon className={classes.text} >
                             {lsitem.listIcon}
                             </ListItemIcon>
-                            <ListItemText primary={lsitem.listtext}/>
+                            <ListItemText primary={lsitem.listtext} className={classes.text}/>
                         </ListItem>
                     )
                     )}
@@ -77,9 +80,9 @@ const Navbar = () => {
                 <AppBar position='static' style={{background: "black"}}>
                         <Toolbar>
                             <IconButton onClick ={() => toggleSlider("right", true)}>
-                                <ArrowBack style={{color:"tomato"}}>
+                                <MenuIcon style={{color:"tomato"}}>
                                 
-                                </ArrowBack>
+                                </MenuIcon>
                             </IconButton>
                             <Typography Varient ="h6" style={{ color: "Grey"}}>Portfolio
                             </Typography>

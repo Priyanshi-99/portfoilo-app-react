@@ -9,7 +9,7 @@ import Logo from './dp.jpg'
 const useStyles = makeStyles(theme =>({
     
     title: {
-        color: "tomato",
+        color: "#ED4264",
         fontFamily: "Courier" 
         
     },
@@ -37,7 +37,7 @@ const Header = () =>{
             <img src ={Logo} style={{height: "300px", width:"300px"}}></img><br /><br />
             
             <Typography className={classes.title} variant="h4" >
-               <Typed strings={["Hello World; I am Priyanshi Nigam...."]} typeSpeed={40}></Typed>
+               <Typed strings={["(Hello World); I am Priyanshi Nigam...."]} typeSpeed={40}></Typed>
 
             </Typography>
             <br />
